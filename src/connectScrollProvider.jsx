@@ -21,7 +21,7 @@ export default function connectScrollProvider(Decorated) {
     }
     render() {
       return (
-        <Decorated {...this.props} {...this.state}
+        <Decorated {...this.state}
           onScroll={this.handleScroll.bind(this)}
         />
       )
